@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Herramientas Gratis Online | Calculadoras y Conversores</title>
+
+<meta name="description" content="Herramientas gratis online para calcular porcentajes, IVA, descuentos, edad, fechas, propinas, regla de tres y convertir unidades.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Herramientas Gratis">
+<meta name="theme-color" content="#2563eb">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Herramientas Gratis Online">
+<meta property="og:description" content="Calculadoras y herramientas gratuitas para usar desde tu celular o computadora.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Herramientas Gratis Online">
+<meta name="twitter:description" content="Calculadoras y herramientas gratuitas online.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Herramientas Gratis Online",
+  "description": "Colección gratuita de calculadoras y herramientas online.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "MXN"
+  }
+}
+</script>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f7fb;
+  color:#172033;
+  line-height:1.6;
+}
+
+header{
+  background:linear-gradient(135deg,#2563eb,#4f46e5);
+  color:white;
+  padding:45px 18px 65px;
+  text-align:center;
+}
+
+header h1{
+  font-size:38px;
+  line-height:1.2;
+  margin-bottom:12px;
+}
+
+header p{
+  max-width:700px;
+  margin:auto;
+  font-size:18px;
+}
+
+.container{
+  width:min(1100px,92%);
+  margin:auto;
+}
+
+.search-container{
+  margin-top:-27px;
+  position:relative;
+}
+
+#buscador{
+  width:100%;
+  border:0;
+  outline:none;
+  padding:18px 20px;
+  border-radius:15px;
+  font-size:17px;
+  box-shadow:0 8px 25px rgba(0,0,0,.14);
+}
+
+.section-title{
+  text-align:center;
+  margin:45px 0 25px;
+}
+
+.section-title h2{
+  font-size:28px;
+  margin-bottom:6px;
+}
+
+.section-title p{
+  color:#64748b;
+}
+
+.tools{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
+  gap:20px;
+}
+
+.tool{
+  background:white;
+  padding:24px;
+  border-radius:18px;
+  border:1px solid #e2e8f0;
+  box-shadow:0 5px 20px rgba(15,23,42,.06);
+}
+
+.tool h3{
+  font-size:21px;
+  margin-bottom:6px;
+}
+
+.tool-description{
+  color:#64748b;
+  font-size:15px;
+  margin-bottom:18px;
+}
+
+label{
+  display:block;
+  font-weight:bold;
+  margin:11px 0 5px;
+}
+
+input,select{
+  width:100%;
+  padding:13px;
+  border:1px solid #cbd5e1;
+  border-radius:10px;
+  background:white;
+  font-size:16px;
+  outline:none;
+}
+
+input:focus,select:focus{
+  border-color:#2563eb;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  border:0;
+  border-radius:10px;
+  margin-top:13px;
+  background:#2563eb;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:active{
+  transform:scale(.99);
+}
+
+.btn-secondary{
+  background:#64748b;
+}
+
+.btn-copy{
+  display:none;
+  background:#0f766e;
+}
+
+.result{
+  display:none;
+  margin-top:15px;
+  padding:15px;
+  background:#eff6ff;
+  border:1px solid #bfdbfe;
+  color:#1e40af;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.result.error{
+  background:#fef2f2;
+  border-color:#fecaca;
+  color:#b91c1c;
+}
+
+.no-results{
+  display:none;
+  text-align:center;
+  padding:35px;
+  color:#64748b;
+  grid-column:1/-1;
+}
+
+.info{
+  background:white;
+  margin:45px 0;
+  padding:30px;
+  border-radius:18px;
+  border:1px solid #e2e8f0;
+}
+
+.info h2{
+  font-size:26px;
+  margin-bottom:12px;
+}
+
+.info h3{
+  margin-top:23px;
+  margin-bottom:7px;
+}
+
+.info p{
+  color:#475569;
+  margin-bottom:12px;
+}
+
+.faq{
+  margin-top:20px;
+}
+
+.faq-item{
+  border-bottom:1px solid #e2e8f0;
+  padding:17px 0;
+}
+
+.faq-item strong{
+  display:block;
+  margin-bottom:5px;
+}
+
+footer{
+  background:#111827;
+  color:#cbd5e1;
+  text-align:center;
+  padding:35px 20px;
+  margin-top:50px;
+}
+
+footer strong{
+  color:white;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:30px;
+  }
+
+  header p{
+    font-size:16px;
+  }
+
+  .tools{
+    grid-template-columns:1fr;
+  }
+
+  .tool{
+    padding:20px;
+  }
+
+  .info{
+    padding:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <h1>Herramientas Gratis Online</h1>
+
+    <p>
+      Calculadoras y herramientas útiles para resolver operaciones
+      rápidamente desde tu celular o computadora.
+    </p>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="search-container">
+    <input
+      id="buscador"
+      type="search"
+      placeholder="¿Qué quieres calcular?"
+      autocomplete="off">
+  </div>
+
+  <div class="section-title">
+    <h2>Calculadoras gratuitas</h2>
+    <p>Selecciona una herramienta y obtén tu resultado al instante.</p>
+  </div>
+
+  <section class="tools" id="herramientas">
+
+    <!-- PORCENTAJE -->
+
+    <article class="tool" data-search="porcentaje calculadora porcentaje calcular porcentaje">
+      <h3>Calculadora de porcentaje</h3>
+
+      <p class="tool-description">
+        Calcula rápidamente un porcentaje de cualquier cantidad.
+      </p>
+
+      <label for="porcentaje">Porcentaje (%)</label>
+      <input id="porcentaje" type="number" inputmode="decimal" placeholder="Ej. 20">
+
+      <label for="cantidadPorcentaje">Cantidad</label>
+      <input id="cantidadPorcentaje" type="number" inputmode="decimal" placeholder="Ej. 500">
+
+      <button onclick="calcularPorcentaje()">Calcular porcentaje</button>
+
+      <div class="result" id="resultadoPorcentaje"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarPorcentaje"
+        onclick="copiarResultado('resultadoPorcentaje','copiarPorcentaje')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <!-- IVA -->
+
+    <article class="tool" data-search="iva calculadora iva impuesto impuesto valor agregado">
+      <h3>Calculadora de IVA</h3>
+
+      <p class="tool-description">
+        Calcula el IVA y el precio final de una cantidad.
+      </p>
+
+      <label for="precioIva">Precio</label>
+      <input id="precioIva" type="number" inputmode="decimal" placeholder="Ej. 1000">
+
+      <label for="iva">IVA (%)</label>
+      <input id="iva" type="number" inputmode="decimal" value="16">
+
+      <button onclick="calcularIVA()">Calcular IVA</button>
+
+      <div class="result" id="resultadoIva"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarIva"
+        onclick="copiarResultado('resultadoIva','copiarIva')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <!-- DESCUENTO -->
+
+    <article class="tool" data-search="descuento calculadora descuento precio oferta rebaja">
+      <h3>Calculadora de descuento</h3>
+
+      <p class="tool-description">
+        Calcula cuánto ahorrarás y cuánto pagarás después del descuento.
+      </p>
+
+      <label for="precioDescuento">Precio original</label>
+      <input id="precioDescuento" type="number" inputmode="decimal" placeholder="Ej. 1200">
+
+      <label for="descuento">Descuento (%)</label>
+      <input id="descuento" type="number" inputmode="decimal" placeholder="Ej. 25">
+
+      <button onclick="calcularDescuento()">Calcular descuento</button>
+
+      <div class="result" id="resultadoDescuento"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarDescuento"
+        onclick="copiarResultado('resultadoDescuento','copiarDescuento')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <!-- REGLA DE TRES -->
+
+    <article class="tool" data-search="regla de tres regla tres proporción proporcional matematicas">
+      <h3>Regla de tres</h3>
+
+      <p class="tool-description">
+        Resuelve operaciones de proporción de forma rápida.
+      </p>
+
+      <label for="reglaA">A</label>
+      <input id="reglaA" type="number" inputmode="decimal" placeholder="Ej. 5">
+
+      <label for="reglaB">B</label>
+      <input id="reglaB" type="number" inputmode="decimal" placeholder="Ej. 10">
+
+      <label for="reglaC">C</label>
+      <input id="reglaC" type="number" inputmode="decimal" placeholder="Ej. 20">
+
+      <button onclick="calcularRegla()">Calcular X</button>
+
+      <div class="result" id="resultadoRegla"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarRegla"
+        onclick="copiarResultado('resultadoRegla','copiarRegla')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <!-- EDAD -->
+
+    <article class="tool" data-search="edad calculadora edad fecha nacimiento cumpleaños años">
+      <h3>Calculadora de edad</h3>
+
+      <p class="tool-description">
+        Calcula tu edad en años, meses y días.
+      </p>
+
+      <label for="nacimiento">Fecha de nacimiento</label>
+      <input id="nacimiento" type="date">
+
+      <button onclick="calcularEdad()">Calcular edad</button>
+
+      <div class="result" id="resultadoEdad"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarEdad"
+        onclick="copiarResultado('resultadoEdad','copiarEdad')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <!-- DIAS -->
+
+    <article class="tool" data-search="días entre fechas dias entre fechas diferencia fechas calendario">
+      <h3>Días entre fechas</h3>
+
+      <p class="tool-description">
+        Descubre cuántos días hay entre dos fechas.
+      </p>
+
+      <label for="fechaInicio">Fecha inicial</label>
+      <input id="fechaInicio" type="date">
+
+      <label for="fechaFinal">Fecha final</label>
+      <input id="fechaFinal" type="date">
+
+      <button onclick="calcularDias()">Calcular días</button>
+
+      <div class="result" id="resultadoDias"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarDias"
+        onclick="copiarResultado('resultadoDias','copiarDias')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <!-- PROPINA -->
+
+    <article class="tool" data-search="propina calculadora propina restaurante cuenta dividir cuenta">
+      <h3>Calculadora de propina</h3>
+
+      <p class="tool-description">
+        Calcula la propina y divide la cuenta entre varias personas.
+      </p>
+
+      <label for="cuenta">Total de la cuenta</label>
+      <input id="cuenta" type="number" inputmode="decimal" placeholder="Ej. 850">
+
+      <label for="porcentajePropina">Propina (%)</label>
+      <input id="porcentajePropina" type="number" inputmode="decimal" value="10">
+
+      <label for="personas">Personas</label>
+      <input id="personas" type="number" inputmode="numeric" value="1" min="1">
+
+      <button onclick="calcularPropina()">Calcular propina</button>
+
+      <div class="result" id="resultadoPropina"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarPropina"
+        onclick="copiarResultado('resultadoPropina','copiarPropina')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <!-- CONVERSOR -->
+
+    <article class="tool" data-search="convertidor conversor unidades kilos libras kilogramos metros pies litros galones pulgadas centímetros">
+      <h3>Conversor de unidades</h3>
+
+      <p class="tool-description">
+        Convierte peso, longitud y volumen.
+      </p>
+
+      <label for="conversion">Conversión</label>
+
+      <select id="conversion">
+        <option value="kg-lb">Kilogramos → Libras</option>
+        <option value="lb-kg">Libras → Kilogramos</option>
+        <option value="m-ft">Metros → Pies</option>
+        <option value="ft-m">Pies → Metros</option>
+        <option value="l-gal">Litros → Galones</option>
+        <option value="gal-l">Galones → Litros</option>
+        <option value="cm-in">Centímetros → Pulgadas</option>
+        <option value="in-cm">Pulgadas → Centímetros</option>
+      </select>
+
+      <label for="cantidadConversion">Cantidad</label>
+
+      <input
+        id="cantidadConversion"
+        type="number"
+        inputmode="decimal"
+        placeholder="Ej. 10">
+
+      <button onclick="convertir()">Convertir</button>
+
+      <div class="result" id="resultadoConversion"></div>
+
+      <button
+        class="btn-copy"
+        id="copiarConversion"
+        onclick="copiarResultado('resultadoConversion','copiarConversion')">
+        Copiar resultado
+      </button>
+    </article>
+
+
+    <div class="no-results" id="sinResultados">
+      No encontramos una herramienta con esa búsqueda.
+    </div>
+
+  </section>
+
+
+  <!-- INFORMACIÓN SEO -->
+
+  <section class="info">
+
+    <h2>Calculadoras y herramientas online gratis</h2>
+
+    <p>
+      En esta página puedes encontrar diferentes herramientas gratuitas
+      para realizar cálculos cotidianos de manera rápida y sencilla.
+      Las herramientas funcionan directamente desde el navegador.
+    </p>
+
+    <h3>¿Para qué sirve una calculadora de porcentaje?</h3>
+
+    <p>
+      Una calculadora de porcentaje permite obtener rápidamente una
+      parte determinada de una cantidad. Puede utilizarse para calcular
+      descuentos, aumentos, comisiones, ganancias y otras operaciones.
+    </p>
+
+    <h3>¿Cómo calcular el IVA?</h3>
+
+    <p>
+      Para calcular el IVA se toma el precio y se multiplica por el
+      porcentaje correspondiente dividido entre 100. Después se suma
+      el impuesto al precio original para obtener el total.
+    </p>
+
+    <h3>¿Cómo calcular un descuento?</h3>
+
+    <p>
+      Para conocer el descuento se multiplica el precio original por
+      el porcentaje de descuento y se divide entre 100. El resultado
+      se resta del precio original.
+    </p>
+
+    <h3>¿Cómo calcular la edad?</h3>
+
+    <p>
+      Introduce la fecha de nacimiento y la herramienta compara esa
+      fecha con la fecha actual para calcular los años, meses y días
+      transcurridos.
+    </p>
+
+    <h3>¿Qué es la regla de tres?</h3>
+
+    <p>
+      La regla de tres es una operación matemática utilizada para
+      resolver problemas de proporcionalidad cuando se conocen tres
+      valores y se necesita encontrar un cuarto valor.
+    </p>
+
+    <h2 style="margin-top:30px;">Preguntas frecuentes</h2>
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <strong>¿Estas herramientas son gratis?</strong>
+        <p>
+          Sí. Las herramientas de esta página son gratuitas.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Funcionan desde Android?</strong>
+        <p>
+          Sí. Puedes utilizarlas desde teléfonos Android, iPhone,
+          tablets y computadoras mediante un navegador web.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Tengo que descargar una aplicación?</strong>
+        <p>
+          No. Las herramientas funcionan directamente en el navegador.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Mis datos se envían a algún servidor?</strong>
+        <p>
+          Las operaciones matemáticas se realizan directamente en el
+          navegador y no requieren enviar los datos a un servidor.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p><strong>Herramientas Gratis Online</strong></p>
+  <p>Calculadoras y herramientas útiles para todos.</p>
+  <p>© 2026 Herramientas Gratis</p>
+</footer>
+
+
+<script>
+
+/* =========================
+   FUNCIONES GENERALES
+========================= */
+
+function obtenerNumero(id){
+  return parseFloat(document.getElementById(id).value);
+}
+
+function formato(numero){
+  return Number(numero).toLocaleString("es-MX",{
+    maximumFractionDigits:2
+  });
+}
+
+function mostrarResultado(id,texto,botonId){
+
+  const resultado=document.getElementById(id);
+
+  resultado.innerHTML=texto;
+  resultado.style.display="block";
+  resultado.classList.remove("error");
+
+  if(botonId){
+    document.getElementById(botonId).style.display="block";
+  }
+}
+
+function mostrarError(id,texto,botonId){
+
+  const resultado=document.getElementById(id);
+
+  resultado.innerHTML=texto;
+  resultado.style.display="block";
+  resultado.classList.add("error");
+
+  if(botonId){
+    document.getElementById(botonId).style.display="none";
+  }
+}
+
+
+/* =========================
+   PORCENTAJE
+========================= */
+
+function calcularPorcentaje(){
+
+  const porcentaje=obtenerNumero("porcentaje");
+  const cantidad=obtenerNumero("cantidadPorcentaje");
+
+  if(isNaN(porcentaje)||isNaN(cantidad)){
+    mostrarError(
+      "resultadoPorcentaje",
+      "Introduce el porcentaje y la cantidad.",
+      "copiarPorcentaje"
+    );
+    return;
+  }
+
+  const resultado=(porcentaje*cantidad)/100;
+
+  mostrarResultado(
+    "resultadoPorcentaje",
+    `${formato(porcentaje)}% de ${formato(cantidad)} = ${formato(resultado)}`,
+    "copiarPorcentaje"
+  );
+}
+
+
+/* =========================
+   IVA
+========================= */
+
+function calcularIVA(){
+
+  const precio=obtenerNumero("precioIva");
+  const iva=obtenerNumero("iva");
+
+  if(isNaN(precio)||isNaN(iva)){
+    mostrarError(
+      "resultadoIva",
+      "Introduce el precio y el porcentaje de IVA.",
+      "copiarIva"
+    );
+    return;
+  }
+
+  const impuesto=precio*iva/100;
+  const total=precio+impuesto;
+
+  mostrarResultado(
+    "resultadoIva",
+    `IVA: $${formato(impuesto)}<br>
+     Precio final: $${formato(total)}`,
+    "copiarIva"
+  );
+}
+
+
+/* =========================
+   DESCUENTO
+========================= */
+
+function calcularDescuento(){
+
+  const precio=obtenerNumero("precioDescuento");
+  const descuento=obtenerNumero("descuento");
+
+  if(isNaN(precio)||isNaN(descuento)){
+    mostrarError(
+      "resultadoDescuento",
+      "Introduce el precio y el descuento.",
+      "copiarDescuento"
+    );
+    return;
+  }
+
+  const ahorro=precio*descuento/100;
+  const total=precio-ahorro;
+
+  mostrarResultado(
+    "resultadoDescuento",
+    `Descuento: $${formato(ahorro)}<br>
+     Precio final: $${formato(total)}`,
+    "copiarDescuento"
+  );
+}
+
+
+/* =========================
+   REGLA DE TRES
+========================= */
+
+function calcularRegla(){
+
+  const a=obtenerNumero("reglaA");
+  const b=obtenerNumero("reglaB");
+  const c=obtenerNumero("reglaC");
+
+  if(isNaN(a)||isNaN(b)||isNaN(c)){
+    mostrarError(
+      "resultadoRegla",
+      "Introduce los tres valores.",
+      "copiarRegla"
+    );
+    return;
+  }
+
+  if(a===0){
+    mostrarError(
+      "resultadoRegla",
+      "A no puede ser 0.",
+      "copiarRegla"
+    );
+    return;
+  }
+
+  const x=(b*c)/a;
+
+  mostrarResultado(
+    "resultadoRegla",
+    `X = ${formato(x)}`,
+    "copiarRegla"
+  );
+}
+
+
+/* =========================
+   EDAD
+========================= */
+
+function calcularEdad(){
+
+  const valor=document.getElementById("nacimiento").value;
+
+  if(!valor){
+    mostrarError(
+      "resultadoEdad",
+      "Selecciona tu fecha de nacimiento.",
+      "copiarEdad"
+    );
+    return;
+  }
+
+  const nacimiento=new Date(valor+"T00:00:00");
+  const hoy=new Date();
+
+  if(nacimiento>hoy){
+    mostrarError(
+      "resultadoEdad",
+      "La fecha no puede estar en el futuro.",
+      "copiarEdad"
+    );
+    return;
+  }
+
+  let años=hoy.getFullYear()-nacimiento.getFullYear();
+  let meses=hoy.getMonth()-nacimiento.getMonth();
+  let dias=hoy.getDate()-nacimiento.getDate();
+
+  if(dias<0){
+
+    meses--;
+
+    const diasMesAnterior=
+      new Date(
+        hoy.getFullYear(),
+        hoy.getMonth(),
+        0
+      ).getDate();
+
+    dias+=diasMesAnterior;
+  }
+
+  if(meses<0){
+    años--;
+    meses+=12;
+  }
+
+  mostrarResultado(
+    "resultadoEdad",
+    `Edad: ${años} años, ${meses} meses y ${dias} días`,
+    "copiarEdad"
+  );
+}
+
+
+/* =========================
+   DÍAS ENTRE FECHAS
+========================= */
+
+function calcularDias(){
+
+  const inicio=document.getElementById("fechaInicio").value;
+  const final=document.getElementById("fechaFinal").value;
+
+  if(!inicio||!final){
+    mostrarError(
+      "resultadoDias",
+      "Selecciona las dos fechas.",
+      "copiarDias"
+    );
+    return;
+  }
+
+  const fecha1=new Date(inicio+"T00:00:00");
+  const fecha2=new Date(final+"T00:00:00");
+
+  const diferencia=Math.abs(fecha2-fecha1);
+
+  const dias=Math.round(
+    diferencia/86400000
+  );
+
+  mostrarResultado(
+    "resultadoDias",
+    `Hay ${formato(dias)} días entre las fechas.`,
+    "copiarDias"
+  );
+}
+
+
+/* =========================
+   PROPINA
+========================= */
+
+function calcularPropina(){
+
+  const cuenta=obtenerNumero("cuenta");
+  const porcentaje=obtenerNumero("porcentajePropina");
+  const personas=obtenerNumero("personas");
+
+  if(
+    isNaN(cuenta)||
+    isNaN(porcentaje)||
+    isNaN(personas)||
+    personas<=0
+  ){
+    mostrarError(
+      "resultadoPropina",
+      "Introduce valores válidos.",
+      "copiarPropina"
+    );
+    return;
+  }
+
+  const propina=cuenta*porcentaje/100;
+  const total=cuenta+propina;
+  const persona=total/personas;
+
+  mostrarResultado(
+    "resultadoPropina",
+    `Propina: $${formato(propina)}<br>
+     Total: $${formato(total)}<br>
+     Por persona: $${formato(persona)}`,
+    "copiarPropina"
+  );
+}
+
+
+/* =========================
+   CONVERSOR
+========================= */
+
+function convertir(){
+
+  const cantidad=obtenerNumero("cantidadConversion");
+  const tipo=document.getElementById("conversion").value;
+
+  if(isNaN(cantidad)){
+    mostrarError(
+      "resultadoConversion",
+      "Introduce una cantidad.",
+      "copiarConversion"
+    );
+    return;
+  }
+
+  let resultado;
+  let unidad;
+
+  switch(tipo){
+
+    case "kg-lb":
+      resultado=cantidad*2.2046226218;
+      unidad="lb";
+      break;
+
+    case "lb-kg":
+      resultado=cantidad/2.2046226218;
+      unidad="kg";
+      break;
+
+    case "m-ft":
+      resultado=cantidad*3.280839895;
+      unidad="pies";
+      break;
+
+    case "ft-m":
+      resultado=cantidad/3.280839895;
+      unidad="metros";
+      break;
+
+    case "l-gal":
+      resultado=cantidad*0.264172052;
+      unidad="galones";
+      break;
+
+    case "gal-l":
+      resultado=cantidad/0.264172052;
+      unidad="litros";
+      break;
+
+    case "cm-in":
+      resultado=cantidad/2.54;
+      unidad="pulgadas";
+      break;
+
+    case "in-cm":
+      resultado=cantidad*2.54;
+      unidad="centímetros";
+      break;
+  }
+
+  mostrarResultado(
+    "resultadoConversion",
+    `Resultado: ${formato(resultado)} ${unidad}`,
+    "copiarConversion"
+  );
+}
+
+
+/* =========================
+   COPIAR
+========================= */
+
+function copiarResultado(resultadoId,botonId){
+
+  const texto=
+    document.getElementById(resultadoId).innerText;
+
+  if(
+    navigator.clipboard &&
+    navigator.clipboard.writeText
+  ){
+
+    navigator.clipboard.writeText(texto)
+      .then(()=>{
+
+        const boton=
+          document.getElementById(botonId);
+
+        const original=boton.innerText;
+
+        boton.innerText="¡Copiado!";
+
+        setTimeout(()=>{
+          boton.innerText=original;
+        },1500);
+
+      })
+      .catch(()=>{
+        alert("No se pudo copiar el resultado.");
+      });
+
+  }else{
+
+    alert(texto);
+  }
+}
+
+
+/* =========================
+   BUSCADOR
+========================= */
+
+document
+.getElementById("buscador")
+.addEventListener("input",function(){
+
+  const texto=this.value
+    .toLowerCase()
+    .trim();
+
+  const herramientas=
+    document.querySelectorAll(".tool");
+
+  let encontrados=0;
+
+  herramientas.forEach(herramienta=>{
+
+    const palabras=
+      herramienta
+      .dataset
+      .search
+      .toLowerCase();
+
+    if(palabras.includes(texto)){
+
+      herramienta.style.display="";
+      encontrados++;
+
+    }else{
+
+      herramienta.style.display="none";
+    }
+  });
+
+  document.getElementById("sinResultados")
+    .style.display=
+      encontrados===0 ? "block" : "none";
+});
+
+
+/* =========================
+   FAQ STRUCTURED DATA
+========================= */
+
+const faqSchema={
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"¿Estas herramientas son gratis?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí. Las herramientas de esta página son gratuitas."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Funcionan desde Android?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí. Puedes utilizarlas desde teléfonos Android, iPhone, tablets y computadoras mediante un navegador web."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Tengo que descargar una aplicación?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"No. Las herramientas funcionan directamente en el navegador."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Mis datos se envían a algún servidor?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Las operaciones matemáticas se realizan directamente en el navegador y no requieren enviar los datos a un servidor."
+      }
+    }
+  ]
+};
+
+const faqScript=
+  document.createElement("script");
+
+faqScript.type="application/ld+json";
+
+faqScript.textContent=
+  JSON.stringify(faqSchema);
+
+document.head.appendChild(faqScript);
+
+</script>
+
+</body>
+</html>
